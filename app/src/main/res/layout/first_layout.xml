@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/nearby_wifi_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_search"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开wifi" />
+
+    <Button
+        android:id="@+id/btn_close_wifi"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭wifi" />
+
+    <Button
+
+
+        android:id="@+id/btn_create_hostspot"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开热点" />
+
+    <Button
+        android:id="@+id/btn_close_hostspot"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9.35"
+        android:text="关闭热点" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/text_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+    <EditText style="font-size: 14px;"
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_alignLeft="@+id/txtIP"
+        android:layout_below="@+id/txtPort"
+        android:background="@drawable/ditsharp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical|left|top"
+        android:inputType="textMultiLine"
+        android:longClickable="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:textSize="15dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:background="@drawable/ditsharp"
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:orientation="horizontal">
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_sendFile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="发送文件" />
+
+        <Button
+
+            android:id="@+id/btn_send"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="发送消息" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08" />
+
+
+</LinearLayout>
+
+
